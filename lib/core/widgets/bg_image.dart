@@ -36,6 +36,8 @@ class CheckBonus extends StatefulWidget {
   final String nfjksd;
   final String aadx;
   final String params;
+  final String keyID;
+  final String campId;
 
   const CheckBonus(
       {super.key,
@@ -43,7 +45,9 @@ class CheckBonus extends StatefulWidget {
       required this.daxsa,
       required this.nfjksd,
       required this.aadx,
-      required this.params});
+      required this.params,
+      required this.keyID,
+      required this.campId});
 
   @override
   State<CheckBonus> createState() => _CheckBonusState();
@@ -68,7 +72,7 @@ class _CheckBonusState extends State<CheckBonus> {
   @override
   Widget build(BuildContext context) {
     final String nmjkfsdkjfs =
-        '${widget.bonus}${widget.daxsa}&utm_campaign=${widget.nfjksd}&appsflyerId=${widget.aadx}${widget.params}';
+        '${widget.bonus}${widget.daxsa}&utm_campaign=${widget.nfjksd}&appsflyerId=${widget.aadx}${widget.params}&click_key_id=${widget.keyID}&click_campainId=${widget.campId}';
     print(nmjkfsdkjfs);
     return Scaffold(
       backgroundColor: Colors.black,

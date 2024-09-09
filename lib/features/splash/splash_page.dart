@@ -36,70 +36,68 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: AppColors.purple,
-        body: Stack(
-          children: [
-            Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/icons/splash.png'),
-                  fit: BoxFit.cover,
-                ),
+    return Scaffold(
+      backgroundColor: AppColors.purple,
+      body: Stack(
+        children: [
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/icons/splash.png'),
+                fit: BoxFit.cover,
               ),
             ),
-            Column(
-              children: [
-                Expanded(
-                  flex: 1,
-                  child: Container(),
+          ),
+          Column(
+            children: [
+              Expanded(
+                flex: 1,
+                child: Container(),
+              ),
+              // Container(
+              //   height: 292,
+              //   margin: const EdgeInsets.symmetric(horizontal: 26),
+              //   alignment: Alignment.center,
+              //   child: SvgPicture.asset('assets/icons/logo.svg'),
+              // ),
+              const SizedBox(height: 70),
+              const Text(
+                'Loading...',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 12,
                 ),
-                Container(
-                  height: 292,
-                  margin: const EdgeInsets.symmetric(horizontal: 26),
-                  alignment: Alignment.center,
-                  child: SvgPicture.asset('assets/icons/logo.svg'),
-                ),
-                const SizedBox(height: 70),
-                const Text(
-                  'Loading...',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 12,
+              ),
+              const SizedBox(height: 15),
+              Stack(
+                children: [
+                  Container(
+                    height: 8,
+                    width: 186,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
-                ),
-                const SizedBox(height: 15),
-                Stack(
-                  children: [
-                    Container(
-                      height: 8,
-                      width: 186,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
+                  AnimatedContainer(
+                    duration: const Duration(seconds: 1),
+                    height: 4,
+                    margin: const EdgeInsets.all(2),
+                    width: loaded ? 182 : 0,
+                    decoration: BoxDecoration(
+                      color: AppColors.loading,
+                      borderRadius: BorderRadius.circular(10),
                     ),
-                    AnimatedContainer(
-                      duration: const Duration(seconds: 1),
-                      height: 4,
-                      margin: const EdgeInsets.all(2),
-                      width: loaded ? 182 : 0,
-                      decoration: BoxDecoration(
-                        color: AppColors.loading,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  ],
-                ),
-                Expanded(
-                  flex: 3,
-                  child: Container(),
-                ),
-              ],
-            ),
-          ],
-        ),
+                  ),
+                ],
+              ),
+              Expanded(
+                flex: 3,
+                child: Container(),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }

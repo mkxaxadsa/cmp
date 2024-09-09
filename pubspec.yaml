@@ -27,6 +27,7 @@ dependencies:
   flutter_svg: ^2.0.10+1
   intl: ^0.19.0
   flutter_meta_sdk: ^1.0.2
+  flutter_asa_attribution: ^0.0.3
   ###
 dev_dependencies:
   flutter_test:

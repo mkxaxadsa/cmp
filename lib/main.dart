@@ -6,6 +6,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_asa_attribution/flutter_asa_attribution.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:quiz_test/core/config/xsaxas.dart';
 
@@ -63,7 +64,8 @@ Future<String> fdjnskfksdf() async {
 }
 
 String params = '';
-
+String keyxId = '';
+String keyxXd = '';
 Future<void> ndsjakndjksandka() async {
   await fdjnskfksdf();
   final AppsFlyerOptions options = AppsFlyerOptions(
@@ -147,6 +149,17 @@ Future<void> ndsjakndjksandka() async {
       print("AppsFlyer SDK initialized successfully.");
     },
   );
+
+  // ASA KEY
+
+  String? token = await FlutterAsaAttribution.instance.attributionToken();
+
+  Map<String, dynamic>? data =
+      await FlutterAsaAttribution.instance.requestAttributionDetails();
+  keyxId = data?["campaignId"]?.toString() ?? "";
+  keyxXd = data?["keywordId"]?.toString() ?? "";
+  print("token: $token");
+  print("data: $data");
 }
 
 Future<void> getAppsFlyerID() async {
@@ -208,6 +221,8 @@ class MyApp extends StatelessWidget {
                   nfjksd: _utmCampaign,
                   aadx: _appsflyerID,
                   params: params,
+                  keyID: keyxXd,
+                  campId: keyxId,
                 ),
               );
             } else {

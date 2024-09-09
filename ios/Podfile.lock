@@ -7,6 +7,7 @@ PODS:
   - AppsFlyerFramework (6.14.3):
     - AppsFlyerFramework/Main (= 6.14.3)
   - AppsFlyerFramework/Main (6.14.3)
+  - ASATools (1.4.8)
   - facebook_app_events (0.0.1):
     - FBAudienceNetwork (~> 6.15)
     - FBSDKCoreKit (~> 17.0)
@@ -97,6 +98,8 @@ PODS:
   - FirebaseRemoteConfigInterop (10.25.0)
   - FirebaseSharedSwift (10.25.0)
   - Flutter (1.0.0)
+  - flutter_asa_attribution (0.0.1):
+    - Flutter
   - flutter_inappwebview (0.0.1):
     - Flutter
     - flutter_inappwebview/Core (= 0.0.1)
@@ -176,12 +179,14 @@ PODS:
 DEPENDENCIES:
   - app_tracking_transparency (from `.symlinks/plugins/app_tracking_transparency/ios`)
   - appsflyer_sdk (from `.symlinks/plugins/appsflyer_sdk/ios`)
+  - ASATools (~> 1.4.0)
   - facebook_app_events (from `.symlinks/plugins/facebook_app_events/ios`)
   - firebase_analytics (from `.symlinks/plugins/firebase_analytics/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - firebase_messaging (from `.symlinks/plugins/firebase_messaging/ios`)
   - firebase_remote_config (from `.symlinks/plugins/firebase_remote_config/ios`)
   - Flutter (from `Flutter`)
+  - flutter_asa_attribution (from `.symlinks/plugins/flutter_asa_attribution/ios`)
   - flutter_inappwebview (from `.symlinks/plugins/flutter_inappwebview/ios`)
   - flutter_local_notifications (from `.symlinks/plugins/flutter_local_notifications/ios`)
   - flutter_meta_sdk (from `.symlinks/plugins/flutter_meta_sdk/ios`)
@@ -190,6 +195,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AppsFlyerFramework
+    - ASATools
     - FBAEMKit
     - FBAudienceNetwork
     - FBSDKCoreKit
@@ -228,6 +234,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/firebase_remote_config/ios"
   Flutter:
     :path: Flutter
+  flutter_asa_attribution:
+    :path: ".symlinks/plugins/flutter_asa_attribution/ios"
   flutter_inappwebview:
     :path: ".symlinks/plugins/flutter_inappwebview/ios"
   flutter_local_notifications:
@@ -241,6 +249,7 @@ SPEC CHECKSUMS:
   app_tracking_transparency: e169b653478da7bb15a6c61209015378ca73e375
   appsflyer_sdk: e59c6b99ce2f28b93fe6b3045a97e8e1a20bce97
   AppsFlyerFramework: 0a68f5b72bbbadfa71d4ae3eaf040e82d62e8518
+  ASATools: 56dea6b4b9622ce4410910636037c5c82424fa3d
   facebook_app_events: acb7c266406d3e3592bcf846d7184172ecfd6492
   FBAEMKit: 97eaf41451b49691447df831f7f425229ae64b66
   FBAudienceNetwork: 80a035aa69cc3a71c99e44cb5c2874e4cef9909f
@@ -261,6 +270,7 @@ SPEC CHECKSUMS:
   FirebaseRemoteConfigInterop: b25018791b204c0d78a90e394d6c62d9b1f22da8
   FirebaseSharedSwift: 0274086954b1b2d5fd7e829eccc587044d72a4ba
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_asa_attribution: 46806223774fa2b8428201dbb868feaf1b060b58
   flutter_inappwebview: 3d32228f1304635e7c028b0d4252937730bbc6cf
   flutter_local_notifications: 0c0b1ae97e741e1521e4c1629a459d04b9aec743
   flutter_meta_sdk: 4b8a7c8df465323f82c1d096144d3c0ba012077b
@@ -272,6 +282,6 @@ SPEC CHECKSUMS:
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   shared_preferences_foundation: fcdcbc04712aee1108ac7fda236f363274528f78
 
-PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+PODFILE CHECKSUM: d12677d4923948496b870e9fa57f04cec6763a04
 
 COCOAPODS: 1.15.2
