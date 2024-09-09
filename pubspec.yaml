@@ -12,18 +12,18 @@ dependencies:
   flutter_bloc: ^8.1.6
   go_router: ^14.1.4
   shared_preferences: ^2.2.3
-  appsflyer_sdk: 
+  appsflyer_sdk: ^6.12.2
   overlay_support: ^2.1.0
   facebook_app_events: ^0.19.2
   app_tracking_transparency: ^2.0.4
   dio:
   win32: ^5.5.0
   flutter_local_notifications: ^9.8.0+1
-  firebase_messaging: ^14.2.2
-  firebase_analytics:
+  firebase_messaging: ^14.7.4
+  firebase_analytics: ^10.8.0
   flutter_inappwebview: ^5.8.0
-  firebase_core: 
-  firebase_remote_config:
+  firebase_core: ^2.22.0
+  firebase_remote_config: ^4.3.4
   flutter_svg: ^2.0.10+1
   intl: ^0.19.0
   flutter_meta_sdk: ^1.0.2
